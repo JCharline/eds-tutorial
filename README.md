@@ -13,7 +13,7 @@ Data is fake, and this project can consequently be freely shared without impacti
 Python, JupyterLab and an environment manager are recommended. You may choose for instance [Anaconda](https://docs.anaconda.com/anaconda/install/index.html).
 
 First clone the project locally :
-`git clone {URL}`
+`git clone https://github.com/JCharline/eds-tutorial.git`
 
 If you use Conda as an environment manager, create a new Python environment with the required packages:
 1. `conda create -n eds-tuto python=3.7`
