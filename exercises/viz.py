@@ -35,8 +35,6 @@ def get_df_kaplan(
         minimal "person" table (same schema than raw data df)
     :param df_visit_tmp: pandas df,
         minimal "visit_occurrence" table (same schema than raw data df)
-    :param df_cond_tmp: pandas df,
-        minimal "condition_occurrence" table (same schema than raw data df)
     :param df_med_tmp: pandas df,
         minimal "drug_prescription" table (same schema than raw data df)
     :param age_range: int tuple (size 2),
@@ -135,9 +133,6 @@ def plot_primary_kaplan(
         DataFrame gathering the demographic data about the patients of interest.
         Must have the same structure as the initial `df_person` table (must contain especially `person_id`
         and potential `death_datetime`).
-    :param df_cond_kaplan: pandas df,
-        DataFrame gathering the overall conditions data about the patients of interest.
-        Must have the same structure as the initial `df_person` table.
     :param list_case: list of tuples,
         List of studied case for the survival analysis.
         List of tuple (df_visit-pandas df-, df_med-pandas df-, name-str-) having :
@@ -325,8 +320,6 @@ def plot_primary_multicase_logranktest(
 
     :param df_person_kaplan: pandas df,
         minimal "person" table (same schema than raw data df)
-    :param df_cond_kaplan: pandas df,
-        minimal "condition_occurrence" table (same schema than raw data df)
     :param list_case: list of tuples,
         list of (df_visit-pandas df-, df_med-pandas df-, name-str-) to display
     :param t_end_of_study: datetime.date,
@@ -399,8 +392,6 @@ def plot_secondary_multicase_logranktest(
 
     :param df_person_kaplan: pandas df,
         minimal "person" table (same schema than raw data df)
-    :param df_cond_kaplan: pandas df,
-        minimal "condition_occurrence" table (same schema than raw data df)
     :param list_case: list of tuples,
         list of (df_visit-pandas df-, df_med-pandas df-, name-str-) to display
     :param t_end_of_study,
